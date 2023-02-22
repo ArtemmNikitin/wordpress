@@ -31,6 +31,7 @@
 </footer>
 
 <script src="JS/script.js"></script>
+<?php wp_footer(); ?>
 </body>
 
 </html>

@@ -184,7 +184,44 @@ get_header();
         <div class="form__title">
             Заполните форму ниже, и мы вскоре свяжемся с вами
         </div>
+        <div class="feed-form">
+            <?=do_shortcode('[contact-form-7 id="7" title="Контактная форма 1"]');?>
+        </div>
+		  <!-- <form class="feed-form" action="#">
+		              <input class="feed-form__name" name='full-name' placeholder="ФИО" type="text">
+		              <input class="feed-form__number" name='phone' placeholder="Телефон" type="number">
+		              <input class="feed-form__email" name='email' placeholder="E-mail" type="email">
+		                <div class="feed-form__checkbox">
+		  
+		                    <div class="form-group">
+		                        <label>
+		                            <input type="checkbox" name="coding-notes" class="real-checkbox">
+		                            <span class="custom-checkbox"></span>
+		                            <div class="label-text">Даю согласие на обработку моих персональных данных на условиях и для целей, определенных в
+		                                Согласии на обработку персональных данных
+		                            </div>
+		  
+		                        </label>
+		                    </div>
+		  
+		                    <button class="button button_submit">Отправить</button>
+		                </div>
+		          </form> -->
     </div>
 </section>
+
+<script>
+    $(document).ready(function(){
+        $('span.custom-checkbox').click(function(){
+            if( $('#form_original_checkbox')[0].checked == true ) $('#form_original_checkbox')[0].checked = false;
+            else $('#form_original_checkbox')[0].checked = true;
+        })
+        $('div.label-text').click(function(){
+            if( $('#form_original_checkbox')[0].checked == true ) $('#form_original_checkbox')[0].checked = false;
+            else $('#form_original_checkbox')[0].checked = true;
+        })
+    })
+    
+</script>
 
 <?php get_footer(); ?>

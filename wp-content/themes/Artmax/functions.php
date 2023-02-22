@@ -10,6 +10,8 @@ function artmax_assets() {
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap-reboot.min.css' );
 
     wp_enqueue_style( 'maincss', get_template_directory_uri() . '/assets/css/style.css' );
+    
+    wp_enqueue_script('jquery.js','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js');
 
 
 
