@@ -72,8 +72,19 @@ get_header();
 <section class="services">
     <div class="container">
         <h1 class="services__title">Услуги комплексной безопасности</h1>
-        <div class="services__tabs">  
+        <div class="services__tabs">
+
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn services__tab services__tab_active">Выпадающий</button>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="#">Ссылка 1</a>
+							<a href="#">Ссылка 2</a>
+							<a href="#">Ссылка 3</a>
+						</div>
+				</div>
+
             <ul class="services__wrapper-tabs">
+
                 <li class="services__tab services__tab_active">
                     <div class="services__image-tab">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/services__hand.svg" alt="">
@@ -160,6 +171,8 @@ get_header();
 
             </div>
         </div>
+
+
 
 		  <div class="services__blocks">
             <div class="services__wrapper-blocks">

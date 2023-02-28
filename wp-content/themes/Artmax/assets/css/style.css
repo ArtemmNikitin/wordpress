@@ -130,6 +130,7 @@
 	top: 67px;
 }
 .about {
+	background: url(../img/green-dotes.svg) 100% 0 /10% no-repeat no-repeat;
 	min-height: 1061px;
 }
 .about__title {
@@ -247,6 +248,54 @@
 	margin-top: 46px;
 	cursor: pointer;
 }
+/* выпадающий список */
+
+.dropbtn {
+	background-color: #3498db;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+	background-color: #2980b9;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+/* выпадающий список */
+
 .services__tab {
 	max-width: 370px;
 	align-items: center;
@@ -350,6 +399,10 @@
 	line-height: 24px;
 }
 
+.form {
+	background: url(../img/sphere.svg) 95% center/contain no-repeat, url(../img/grey-dotes1.png) 0 0 /10% no-repeat;
+}
+
 .form .container {
 	margin: 0 auto;
 	max-width: 1160px;
@@ -379,14 +432,6 @@
 	padding-top: 66px;
 	position: relative;
 	z-index: 2;
-}
-
-.form .feed-form .feed-form__sphere {
-	position: absolute;
-	width: 880px;
-	top: -300px;
-	left: 1000px;
-	z-index: 1;
 }
 
 .form .feed-form input {
