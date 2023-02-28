@@ -48,7 +48,7 @@
             </div>
 
             <div class="button header__button">
-                <a href="#">Оставить заявку</a>
+                <a href="#form-anchor">Оставить заявку</a>
             </div>
         </div>
     </div>

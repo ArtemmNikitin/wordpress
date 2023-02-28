@@ -5,15 +5,21 @@ get_header();
 
 ?>
     <div class="container">
-        <div class="promo__title">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/artmax.svg" alt="artmax">
-        </div>
-        <div class="promo__subtitle">
-            <img src="<?php bloginfo('template_url'); ?>/assets/img/internet-security.svg" alt="internet-security">
-        </div>
-        <div class="promo__text">
-            Благодаря нашей многолетней практике, мы получили обширный опыт и можем предложить лучшие решения, которые работают в реальных условиях
-        </div>
+		<div class="promo__flex-wrapper">
+			<div class="promo__virus-img">
+			<img src="<?php bloginfo('template_url'); ?>/assets/img/virus.svg" alt="artmax">
+			</div>
+			<div class="promo__title">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/artmax.svg" alt="artmax">
+			</div>
+			<div class="promo__subtitle">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/internet-security.svg" alt="internet-security">
+			</div>
+			<div class="promo__text">
+					Благодаря нашей многолетней практике, мы получили обширный опыт и можем предложить лучшие решения, которые работают в реальных условиях
+			</div>
+		</div>
+		
     </div>
 </section>
 <section class="about">
@@ -21,10 +27,8 @@ get_header();
         <div class="about__title">ArtMax IS — ведущая российская IT-компания и лидер в области защиты
         </div>
         <div class="about__wrapper">
-            <div class="about__image">
-                <div class="about__rings">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/img/info__programmer.png" alt="">
-                </div>
+		  		<div class="about__image">
+					<img src="<?php bloginfo('template_url'); ?>/assets/img/programmer-rings.svg" alt="">
             </div>
 
             <div class="about__text-wrapper">
@@ -34,15 +38,19 @@ get_header();
 
                     <div class="card-about">
                         <div class="card-about__wrapper">
-                            <span class="card-about__number">12</span>
-                            <span class="card-about__thin-text">лет
-								</span>
-                            <div>защиты сайтов и приложений</div>
+									 <img class="card-about__green-stripe" src="<?php bloginfo('template_url'); ?>/assets/img/green-stripe.svg" alt="green-stripe">
+									<div>
+										<span class="card-about__number">12</span>
+										<span class="card-about__thin-text">лет</span>
+										<div>защиты сайтов и приложений</div>
+									</div>
+
                         </div>
                     </div>
 
                     <div class="card-about">
                         <div class="card-about__wrapper">
+									 <img class="card-about__green-stripe" src="<?php bloginfo('template_url'); ?>/assets/img/green-stripe.svg" alt="green-stripe">
                             <span class="card-about__number">300<sup>+</sup></span>
                             <span class="card-about__thin-text">проектов
 								</span>
@@ -53,7 +61,7 @@ get_header();
                 </div>
 
                 <div class="button about__button">
-                    <a href="#">Оставить заявку</a>
+                    <a href="#form-anchor">Оставить заявку</a>
                 </div>
 
             </div>
@@ -64,39 +72,36 @@ get_header();
 <section class="services">
     <div class="container">
         <h1 class="services__title">Услуги комплексной безопасности</h1>
-        <div class="services__tabs">
-            <div class="services__wrapper-tabs">
-                <div class="services__tab">
+        <div class="services__tabs">  
+            <ul class="services__wrapper-tabs">
+                <li class="services__tab services__tab_active">
                     <div class="services__image-tab">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/services__hand.svg" alt="">
                     </div>
                     <div class="services__text-tab">Защита от DDoS-атак</div>
-                </div>
-                <div class="services__tab">
+                </li>
+                <li class="services__tab">
                     <div class="services__image-tab">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/services__bot.svg" alt="">
                     </div>
                     <div class="services__text-tab">Защита от ботов
                     </div>
-                </div>
-                <div class="services__tab">
+                </li>
+                <li class="services__tab">
                     <div class="services__image-tab">
                         <img src="<?php bloginfo('template_url'); ?>/assets/img/services__wall.svg" alt="">
                     </div>
                     <div class="services__text-tab">Защита от взлома</div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
-        <hr color=#222222; size=2; class="services__hr">
-        <div class="services__blocks">
+
+        <div class="services__blocks services__blocks_active">
             <div class="services__wrapper-blocks">
 
                 <div class="services__content">
                     <div class="services__text">
-                        Cеть фильтрации позволяет малым и крупным организациям защитить приложения от любых DDoS-атак вне зависимости от полосы и сложности.<br><br>15 центров очистки трафика обеспечивают отличную связность сети по всему миру с пропускной способностью свыше 3000 Gbps.
-                    </div>
-                    <div class="button about__button services__button">
-                        <a href="#">Защитить сайт</a>
+						  Наши специалисты используют особую систему фильтрации, которая надежно защищает от DDoS-атак любой сложности, а воспользоваться услугой смогут как небольшие компании, так и крупные корпорации. Несмотря на то, что для нашей компании эта услуга считается новой, уже сейчас мы можем похвастаться некоторыми успешными внедрениями, которые обеспечивают высокий уровень защиты.<br><br>Кроме того, в нашей компании предусмотрена круглосуточная техническая поддержка, сотрудники которой оперативно предоставят помощь и консультации.
                     </div>
                 </div>
 
@@ -137,18 +142,79 @@ get_header();
                             </div>
                         </div>
                     </div>
+                    
                     <div class="info-card">
                         <div class="info-card__wrapper">
                             <div class="info-card__title">
                                 <img src="<?php bloginfo('template_url'); ?>/assets/img/shieldmark.svg" alt="shield">
-                                <div>Защита в автоматическом режиме 24/7
+                                <div>Легкость подключения
                                 </div>
                             </div>
                             <div class="info-card__text">
-                                Не требуется постоянное участие квалифицированных специалистов и ручной настройки для защиты от сложных DDoS-атак
+                                Предоставляем различные варианты подключения, включая DNS и BGP
                             </div>
                         </div>
                     </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+		  <div class="services__blocks">
+            <div class="services__wrapper-blocks">
+
+                <div class="services__content">
+                    <div class="services__text">
+						  Боты могут использоваться злоумышленниками для парсинга, кражи паролей и других персональных данных пользователей. Из-за некачественной защиты от ботов падает авторитет компании, да и сам онлайн-бизнес может пострадать.<br><br>Мы предлагаем решения, которые позволяют качественно фильтровать трафик, вносить изменения в пользовательские настройки, а различные способы обнаружения ботов обеспечивают надежную защиту сайта.
+                    </div>
+                    
+                </div>
+
+                <div class="info-cards">
+
+                    <div class="info-card">
+                        <div class="info-card__wrapper">
+                            <div class="info-card__title">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/shieldmark.svg" alt="shield">
+                                <div>Гарантированный̆ уровень доступности
+                                </div>
+                            </div>
+                            <div class="info-card__text">
+                                Вы не платите за сервис, если уровень SLA не был соблюден
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+		  <div class="services__blocks">
+            <div class="services__wrapper-blocks">
+
+                <div class="services__content">
+                    <div class="services__text">
+						  Данная услуга считается комплексной, так как направлена не только на непрерывную защиту сайтов от кражи или изменения данных сайта, но и на оперативное обнаружение и устранение уязвимостей, которые могут в дальнейшем стать причиной взлома сайта.<br><br>Для качественной защиты от взлома мы используем современные технологии и облачные решения, которые позволяют тонко распознавать и блокировать любые уязвимости сайта.
+                    </div>
+                    
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-card__wrapper">
+                            <div class="info-card__title">
+                                <img src="<?php bloginfo('template_url'); ?>/assets/img/shieldmark.svg" alt="shield">
+                                <div>Защита от атак на всех уровнях ISO OSI, включая L7
+                                </div>
+                            </div>
+                            <div class="info-card__text">
+                                Блокируем масштабные атаки на сетевую инфраструктуру и точечные атаки на приложения
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="info-card">
                         <div class="info-card__wrapper">
                             <div class="info-card__title">
@@ -177,9 +243,14 @@ get_header();
 
             </div>
         </div>
+
+		  <div class="button about__button services__button">
+                        <a href="#form-anchor">Защитить сайт</a>
+                    </div>
+
     </div>
 </section>
-<section class="form">
+<section id="form-anchor" class="form">
     <div class="container">
         <div class="form__title">
             Заполните форму ниже, и мы вскоре свяжемся с вами
