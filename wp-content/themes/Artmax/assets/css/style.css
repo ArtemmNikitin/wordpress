@@ -377,7 +377,18 @@
 	padding-left: 78px;
 	padding-right: 78px;
 	padding-top: 66px;
+	position: relative;
+	z-index: 2;
 }
+
+.form .feed-form .feed-form__sphere {
+	position: absolute;
+	width: 880px;
+	top: -300px;
+	left: 1000px;
+	z-index: 1;
+}
+
 .form .feed-form input {
 	width: 90%;
 	background: #fff;
@@ -389,12 +400,6 @@
 	padding: 0 25px 0;
 }
 
-/* input.real-checkbox {
-	width: 1px;
-	padding: 0;
-	margin: 0;
-} */
-
 .form .feed-form .feed-form__checkbox {
 	margin-top: 51px;
 }
@@ -403,19 +408,13 @@
 	width: content;
 }
 
-/* .form .feed-form .feed-form__checkbox.form-group.real-checkbox {
-	width: 1px;
-	padding: 0;
-	margin: 0;
-} */
-
 .form-group {
 	display: flex;
 	width: 100%;
 }
 
 .feed-form .form-group input {
-	width: 100px;
+	width: 1px;
 }
 
 .form-group :first-child {
@@ -455,9 +454,6 @@ label {
 	max-width: 350px;
 	text-align: start;
 }
-/* *********************************
-Чекбоксы
-********************************* */
 
 .real-checkbox {
 	width: 1px;
@@ -511,6 +507,7 @@ label {
 	background: url(../img/footer.png) center center/cover no-repeat;
 	color: #fff;
 	min-height: 364px;
+	z-index: 3;
 }
 .footer .footer__top {
 	align-items: center;
